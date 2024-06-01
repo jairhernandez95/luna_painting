@@ -1,0 +1,167 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+button{
+  box-shadow: 4px 4px #ffffff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h3{
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a{
+  text-decoration: none;
+}
+
+/* Header */
+.headerDiv{
+  background-color: #627288;
+  padding: 20px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky
+}
+.headerDiv>img{
+  height: 80px;
+}
+.headerDiv>a>h3{
+  color: #ffffff;
+  cursor: pointer;
+}
+.headerDiv>button{
+  background-color: white;
+  color: #BDA435;
+  outline: 1px solid #BDA435;
+  border: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.headerDiv>button:focus{
+  background-color: #BDA435;
+  color: white;
+}
+
+/* Section Title */
+.sectionTitleDiv{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-image: url("./assets/fotoTitleSectio.png");
+  background-repeat: none;
+  background-size: cover;
+  opacity: 0.8;
+  height: 600px;
+  align-content: center;
+  justify-content: center;
+}
+.sectionTitleDiv>h1{
+  font-size: 40px;
+  width: 500px;
+  text-align: center;
+  color: white;
+}
+.sectionTitleDiv>h3{
+  font-size: 20px;
+  width: 500px;
+  text-align: center;
+  color: white;
+}
+
+/* Section Contact */
+.sectionContact{
+  background-color: #627288;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.sectionContactDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.sectionContactDiv > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionContactDiv > div > a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sectionContactDiv > div > a > img{
+  width: 30%;
+  cursor: pointer;
+}
+
+
+@media only screen and (min-width: 1751px){
+
+}
+@media only screen and (max-width: 1750px) {
+
+}
+ @media only screen and (max-width: 1580px){
+  
+}
+@media only screen and (max-width: 1530px) {
+
+}
+@media only screen and (max-width: 1360px){
+  
+}
+@media only screen and (max-width: 1300px) {
+  
+}
+@media only screen and (max-width: 1260px){
+
+}
+@media only screen and (max-width: 1070px) {
+  
+}
+@media only screen and (max-width: 990px){
+  
+}
+@media only screen and (max-width: 900px){
+  
+}
+@media only screen and (max-width: 770px){
+  
+}
+@media only screen and (max-width: 750px){
+  h1, .spanishTitle, .spanishWelcome{
+    font-weight:large;
+  }
+  h3, .englishTitle , .englishWelcome{
+    font-weight: medium;
+  }
+  button{
+    font-weight: 200;
+  }
+}
+@media only screen and (max-width: 375px){
+  
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Propriedades meta -->
+  <meta property="og:title" content="LUNA Painting" />
+  <meta property="og:description" content="Nos dedicamos a crear las mejores experiencias de drinks y pintura para todas las edades. | We are dedicated to creating the best drinking and painting experiences for all ages." />
+  <meta property="og:image" content="https://lh5.googleusercontent.com/7mzFcOuFI9N9AhpqVTbI3uOKdes81F4l1pXNlkRhac5NxufjTa-zG02LmMea9YfOPs8=w2400" />
+  <!-- Fonts google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <!-- W3schools -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/faviconLuna40px.png" type="image/x-icon">
+  <!-- Sweetalert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Propios archivos -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>LUNA Painting</title>
+</head>
+<body>
+  <header>
+    <div class="headerDiv">
+      <img src="assets/logoLuna.png" alt="">
+      <a href="https://www.instagram.com/lunapainting.mx/" target="_blank" id="headerEventsTextToTranslateSpanish">
+        <h3>Eventos</h3>
+      </a>
+      <a href="https://www.instagram.com/lunapainting.mx/" target="_blank" id="headerEventsTextToTranslateEnglish" style="display: none;">
+        <h3>Events</h3>
+      </a>
+      <a href="https://wa.me/526643644425" target="_blank" id="headerContactTextToTranslateSpanish">
+        <h3>Contacto</h3>
+      </a>
+      <a href="https://wa.me/526643644425" target="_blank" id="headerContactTextToTranslateEnglish" style="display: none;">
+        <h3>Contact</h3>
+      </a>
+      <button onclick="toTranslate('e')" id="buttonToTranslateToEnglish">Eng</button>
+      <button onclick="toTranslate('s')" id="buttonToTranslateToSpanish" style="display: none;">Esp</button>
+    </div>
+    <div>
+    </div>
+  </header>
+  <main>
+    <section class="sectionTitle">
+      <div class="sectionTitleDiv">
+        <h1 id="spanishTitle">Bienvenidx a LUNA Painting</h1>
+        <h3 id="spanishWelcome">Nos dedicamos a crear las mejores experiencias de drinks y pintura para todas las edades. Sumergete en nuestros talleres con clase guiada en los mejores establecimientos de la Baja.</h3>
+        <h1 id="englishTitle" style="display: none;">Welcome to LUNA Painting</h1>
+        <h3 id="englishWelcome" style="display: none;">We are dedicated to creating the best drinking and painting experiences for all ages. Immerse yourself in our workshops with guided classes in the best establishments in Baja.</h3>
+      </div>
+    </section>
+    <section class="sectionExplanation">
+      <!-- <div class="w3-container">
+        <h1 class="my-3 text-center">Eventos Drink & Paint</h1>
+        <div id="container" class="container d-flex flex-wrap">
+	      </div>
+      </div> -->
+    </section>
+    <section class="sectionContact">
+      <div style="width: 100%; display: flex; align-items: center; justify-content: center; text-align: center;">
+        <h1 id="sectionContactTextSpanish">Encuéntranos en todas nuestras plataformas</h1>
+        <h1 id="sectionContactTextEnglish" style="display: none;">Find us on all our platforms</h1>
+      </div>
+      <div class="sectionContactDiv">
+        <div>
+          <a href="https://wa.me/526643644425" target="_blank">
+            <img src="./assets/logoWhatsapp.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/lunapainting.mx/" target="_blank">
+            <img src="./assets/logoInstagram.png" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/lunapainting.tj" target="_blank">
+            <img src="./assets/logoFacebook.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script>
+  getEvents()
+</script>
+</html>
